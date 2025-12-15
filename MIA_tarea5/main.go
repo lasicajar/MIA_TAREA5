@@ -21,7 +21,7 @@ func main() {
 	fmt.Println("🚀 API escuchando en http://localhost:8080")
 
 	// Iniciar servidor
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe("0.0.0.0:8080", nil)
 	if err != nil {
 		fmt.Printf("Error al iniciar el servidor: %v\n", err)
 	}
